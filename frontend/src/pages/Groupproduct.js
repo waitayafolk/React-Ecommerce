@@ -255,7 +255,7 @@ export default function Groupproduct() {
                       onChange={handleChangeReserveData("group_code")}
                       type="text"
                       className="form-control"
-                      placeholder="User Code"
+                      placeholder="รหัสประเภทสินค้า"
                       required
                     />
                   </div>
@@ -270,7 +270,7 @@ export default function Groupproduct() {
                       onChange={handleChangeReserveData("group_product_name")}
                       type="text"
                       className="form-control"
-                      placeholder="ชื่อ-สกุล"
+                      placeholder="ชื่อประเภทสินค้า"
                       required
                     />
                   </div>
@@ -287,7 +287,7 @@ export default function Groupproduct() {
                       onChange={handleChangeReserveData("group_product_name_eng")}
                       type="text"
                       className="form-control"
-                      placeholder="Username"
+                      placeholder="ชื่อประเภทสินค้า(EN)"
                       required
                     />
                   </div>
@@ -301,7 +301,7 @@ export default function Groupproduct() {
                       value={detailGroupproduct.detail}
                       onChange={handleChangeReserveData("detail")}
                       className="form-control"
-                      placeholder="Password"
+                      placeholder="รายละเอียด"
                       required
                     />
                   </div>
