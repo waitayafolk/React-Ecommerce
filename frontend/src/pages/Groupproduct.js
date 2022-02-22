@@ -114,7 +114,7 @@ export default function Groupproduct() {
                   <button
                     onClick={() => {
                       GroupproductSave({
-                        header: "เพิ่มผู้ใช้งานระบบ",
+                        header: "เพิ่มประเภทสินค้า",
                         id: 0,
                         group_code: "",
                         group_product_name: "",
@@ -157,7 +157,7 @@ export default function Groupproduct() {
                     {grpupproduct.length > 0 ? (
                       <>
                         {grpupproduct.map((item, index) => {
-                          item.header = "แก้ไขผู้ใช้งานระบบ";
+                          item.header = "แก้ไขประเภทสินค้า";
                           return (
                             <>
                               <tr>

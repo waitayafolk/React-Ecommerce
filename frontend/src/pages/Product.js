@@ -125,7 +125,7 @@ export default function Product() {
                 <span>
                   <i className="nav-icon fas fa-users" />
                 </span>{" "}
-                ผู้ใช้งานระบบ
+                สินค้า
               </h3>
             </div>
             <div style={{ padding: 20 }}>
@@ -169,7 +169,7 @@ export default function Product() {
                       >
                         ลำดับ
                       </th>
-                      <th className="min-vw-90">รูปภาไ</th>
+                      <th className="min-vw-90">รูปภาพ</th>
                       <th className="min-vw-90">รหัสสินค้า</th>
                       <th className="min-vw-90">ชื่อสินค้า</th>
                       <th className="min-vw-90">ราคา</th>
@@ -181,7 +181,7 @@ export default function Product() {
                     {product.length > 0 ? (
                       <>
                         {product.map((item, index) => {
-                          item.header = "แก้ไขผู้ใช้งานระบบ";
+                          item.header = "แก้ไขสินค้า";
                           return (
                             <>
                               <tr>
