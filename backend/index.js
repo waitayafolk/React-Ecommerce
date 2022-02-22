@@ -14,6 +14,7 @@ const order = require("./router/order");
 
 app.use(bodyParser.json());
 app.use(cors());
+
 app.use('/public', express.static('public'));
 
 app.use("/user", user);
@@ -58,7 +59,7 @@ app.post('/picture_product', (req, res) => {
       console.error(err);
       return res.status(500).send(err);
     }
-    res.json({ fileName: file.name, filePath: `/images/${file.name}` });
+    res.json({ fileName: file.name});
   });
 });
 
