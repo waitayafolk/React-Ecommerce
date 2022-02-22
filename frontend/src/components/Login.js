@@ -48,10 +48,10 @@ export default function Login() {
     >
       <div className="h1">
         <div className="text-center" style={{ color: "white" }}>
-          <b>IService2021</b>
+          <b>Ecommerce</b>
         </div>
         <div className="text-center" style={{ color: "white" }}>
-          <b>ระบบเเจ้งซ่อมออนไลน์</b>
+          <b>ระบบร้านค้าออนไลน์</b>
         </div>
       </div>
       <div className="login-box">

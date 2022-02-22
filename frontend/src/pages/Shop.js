@@ -91,13 +91,13 @@ export default function Shop() {
       customer_name: customer.customer_name,
       customer_tel: customer.customer_tel,
       customer_address: customer.customer_address,
-      product : productInCart
+      product: productInCart,
     });
     if (rs.data.message == "success") {
-        localStorage.clear("cart")
-        loadProductToCart()
-        swal("บันทึกสำเร็จ !", "บันทึกข้อมูลเสร็จสิ้น", "success");
-        setShow(false);
+      localStorage.clear("cart");
+      loadProductToCart();
+      swal("บันทึกสำเร็จ !", "บันทึกข้อมูลเสร็จสิ้น", "success");
+      setShow(false);
     } else {
       swal("เกิดข้อผิดพลาด !", "กรุณาตรวจสอบข้อมูลใหม่อีกครั้ง", "error");
     }
@@ -109,7 +109,7 @@ export default function Shop() {
       if (ProductInCart[i].id === item.id) {
         ProductInCart[i].qty++;
         localStorage.setItem("cart", JSON.stringify(ProductInCart));
-        loadProductToCart()
+        loadProductToCart();
         return showModal();
       }
     }
@@ -124,9 +124,8 @@ export default function Shop() {
         } else {
           ProductInCart[i].qty--;
         }
-
         localStorage.setItem("cart", JSON.stringify(ProductInCart));
-        loadProductToCart()
+        loadProductToCart();
         return showModal();
       }
     }
@@ -161,7 +160,7 @@ export default function Shop() {
               <div className="col-sm-6">
                 <h1 className="m-0">
                   {" "}
-                  Top Navigation <small>Example 3.0</small>
+                  ร้านค้าออนไลน์ <small>Ecommerce</small>
                 </h1>
               </div>
             </div>
@@ -180,7 +179,7 @@ export default function Shop() {
                             <div className="card-body">
                               <div className="text-center">
                                 <img
-                                  style={{ width: 50, width: 50 }}
+                                  style={{ height: 200, width: 200 }}
                                   src={`http://localhost:4500/public/${item.image}`}
                                 />
                               </div>
